@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Create ThankUs on the fly and show your customers that you care about the environment." />
+    <title>ThankU Postpaid Widget - Examples</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link href="https://www.thanku.social/fonts/exo.css" rel="stylesheet" />
+    <link href="https://www.thanku.social/fonts/roboto-mono.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="assets/prism.css" rel="stylesheet" />
+    <script type="module" src="./lib/postpaid-widget.js"></script>
+  </head>
+  <body>
+    <section class="container mx-auto px-5 py-12">
+      <a href="http://github.com/thanku/postpaid-widget" class="float-right mb-3 ml-3" title="Show project on GitHub">
+        <img src="./assets/github-logo.svg" width="35" height="35" alt="GitHub logo" />
+      </a>
+      <h1 class="text-teal-dark">ThankU Postpaid Widget - Examples</h1>
+
+      <h2 class="mb-3 mt-8">Don't forget to put this inside &lt;head&gt;</h3>
+      <pre><code class="language-html">&lt;link href="https://www.thanku.social/fonts/exo.css" rel="stylesheet" />
+&lt;script type="module" src="https://unpkg.com/@thanku/postpaid-widget">&lt;/script></code></pre>
+
+      <h2 class="mb-3 mt-8">Well defined parameters</h2>
+      <pre><code class="language-html"></code></pre>
+<thanku-postpaid-widget
+  slug="freshfarm-shop"
+  cause="PlantTrees"
+  impact="1"
+  pid="ffs-order-00001"
+  sig="4b5cf6b9fc0302ca5e63f138978ee6b21b4ce1d188d45fa0e54d7c0421bf0dd4"
+  message="Dear Martin, thank you for shopping with us! We really appreciate you as a customer. Best regards, your Feshfarm Shop team"
+  lang="en"
+>
+  <!-- [start] fallback content if web components are not supported -->
+  <p>
+    Dear Martin, thank you for shopping with us! We really appreciate you
+    as a customer. Best regards, your Feshfarm Shop team
+  </p>
+  <!-- [end] -->
+</thanku-postpaid-widget>
+
+      <h2 class="mb-3 mt-8">With custom styling (e.g. dark mode)</h2>
+      <pre><code class="language-html"></code></pre>
+<thanku-postpaid-widget
+  style="
+    --bg-image: none;
+    --bg-color: #202c55;
+    --bg-color-button-hover: #78c0c4;
+    --color-text-base: white;
+    --color-text-headline: #78c0c4;
+    --shadow-color-message: transparent"
+  slug="freshfarm-shop"
+  cause="ProtectWildlife"
+  impact="5"
+  pid="ffs-order-00002"
+  sig="9f5a8559c9fd516e88d9aea0922b5ba3ac64b2d30f6b8ad9f709c48ef5524db1"
+  message="Lieber Martin, danke für Deinen Einkauf! Wir schätzen Dich als Kunden sehr. Beste Grüße, Dein Feshfarm Shop Team"
+  lang="de"
+>
+</thanku-postpaid-widget>
+
+      <h2 class="mb-3 mt-8">On error (missing parameters, failed API request, ...)</h2>
+      <pre><code class="language-html"></code></pre>
+<thanku-postpaid-widget>
+  <!-- the widget only renders when everything works out well -->
+  <p>So this fallback markup is here to stay in case of an error</p>
+</thanku-postpaid-widget>
+
+      <p class="mt-8"><small>copyright (c) 2021 <a href="https://www.thanku.social" class="text-teal-dark">ThankU</a> (thxto gUG)</small></p>
+    </section>
+
+    <script>
+      document.querySelectorAll('pre + thanku-postpaid-widget').forEach(widget => {
+        widget.previousElementSibling.querySelector('code').textContent = widget.outerHTML;
+      });
+    </script>
+    <script src="assets/prism.js"></script>
+  </body>
+</html>

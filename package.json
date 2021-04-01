@@ -1,0 +1,25 @@
+{
+  "name": "@thanku/postpaid-widget",
+  "version": "0.1.0",
+  "description": "The ThankU Postpaid Widget is a Web Component that is intended to be integrated on e.g. checkout success pages of online shops",
+  "main": "lib/postpaid-widget.js",
+  "module": "lib/postpaid-widget.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx live-server ."
+  },
+  "files": [
+    "lib/postpaid-widget.js"
+  ],
+  "keywords": [
+    "thanku",
+    "widget",
+    "web component",
+    "postpaid"
+  ],
+  "author": "ThankU (thxto gUG)",
+  "homepage": "https://thanku.github.io/postpaid-widget/",
+  "repository": "github:thanku/postpaid-widget",
+  "license": "MIT"
+}

@@ -14,8 +14,6 @@ Create ThankUs on the fly and show your customers that you care about the enviro
 
 We make use of the latest browser features ([Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), [module scripts](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*), etc.) which are well supported in current versions of [Google Chrome](https://www.google.com/chrome/), [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/), [Apple Safari](https://www.apple.com/safari/) and [Microsoft Edge](https://www.microsoft.com/en-us/edge). If you need to target older browser versions or Microsoft Internet Explorer, you need to provide appropriate polyfills.
 
-Under the hood we use the awesome [hybrids](https://hybrids.js.org), a UI library for creating Web Components, via CDN import.
-
 ## Installation
 
 ### Self hosted
@@ -84,7 +82,7 @@ To get the full ThankU look and feel, also include the following font inside `<h
 | `lang`     |          | `en`    | The language used for the widget and for the generated ThankU (possible values: `en`, `de`)                                                              |
 | `simulate` |          | -       | If defined no data will be stored on our side, so no ThankU will be created. Great for testing!                                                          |
 
-Basically it's possible to update attributes programatically, but you should be aware of the fact that the signature `sig` depends on the other attributes and that a new ThankU will be generated then. So better avoid updating attributes after the component was rendered.
+**NOTE:** It's NOT possible to update attributes programatically, because the signature `sig` needs to be generated server-side anyway to keep your `token` secret.
 
 ### Styling
 

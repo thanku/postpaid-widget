@@ -1,6 +1,6 @@
 {
   "name": "@thanku/postpaid-widget",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "The ThankU Postpaid Widget is a Web Component that is intended to be integrated on e.g. checkout success pages of online shops",
   "main": "lib/postpaid-widget.js",
   "module": "lib/postpaid-widget.js",

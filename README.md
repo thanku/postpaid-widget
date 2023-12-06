@@ -38,7 +38,7 @@ Run `npm i @thanku/postpaid-widget`.
 
 ## Usage
 
-This widget is intended for **ThankU for Business** partners. Before using this widget you need to [create your own ThankU page](https://www.thanku.social/en/app/profile/preview). And we need to setup the required configuration for you. So if you are interested in using the ThankU Postpaid Widget, do not hesitate to get in touch with us via: business@thanku.social.
+This widget is intended for **ThankU for Business** partners. Before using this widget you need to [create your own ThankU wallet](https://www.thanku.social/en/app/profile/preview). And we need to setup the required configuration for you. So if you are interested in using the ThankU Postpaid Widget, do not hesitate to get in touch with us via: business@thanku.social.
 
 ---
 
@@ -73,7 +73,7 @@ To get the full ThankU look and feel, also include the following font inside `<h
 
 | name       | required | default | description                                                                                                                                              |
 | ---------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `slug`     | ✔️       | -       | Your ThankU page name                                                                                                                                    |
+| `slug`     | ✔️       | -       | Your ThankU wallet name                                                                                                                                    |
 | `cause`    | ✔️       | -       | The good cause you want to support (possible values: `PlantTrees`, `CleanOcean`, `ProtectWildlife`)                                                      |
 | `impact`   | ✔️       | -       | The impact value (a positive integer). Depending on the selected `cause` this value represents either number of trees, kg plastic or sqm habitat.        |
 | `message`  | ✔️       | -       | The ThankU message you want to show                                                                                                                      |

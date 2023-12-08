@@ -38,7 +38,7 @@ Run `npm i @thanku/postpaid-widget`.
 
 ## Usage
 
-This widget is intended for **ThankU for Business** partners. Before using this widget you need to [create your own ThankU wallet](https://www.thanku.social/en/app/profile/preview). And we need to setup the required configuration for you. So if you are interested in using the ThankU Postpaid Widget, do not hesitate to get in touch with us via: business@thanku.social.
+This widget is intended for **ThankU for Business** partners. Before using this widget you need to [create your own ThankU wallet](https://www.thanku.social/create-wallet). And we need to setup the required configuration for you. So if you are interested in using the ThankU Postpaid Widget, do not hesitate to get in touch with us via: business@thanku.social.
 
 ---
 

@@ -53,6 +53,7 @@ Create a `<thanku-postpaid-widget>` element with default content for users of br
   pid="SOME_UNIQUE_ID"
   sig="THE_SIGNATURE_CREATED_WITH_YOUR_SECRET"
   lang="en"
+  oid="A-MA-5"
 >
   <!-- [start] fallback content if web components are not supported -->
   <p>
@@ -73,12 +74,13 @@ To get the full ThankU look and feel, also include the following font inside `<h
 
 | name       | required | default | description                                                                                                                                              |
 | ---------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `slug`     | ✔️       | -       | Your ThankU wallet name                                                                                                                                    |
+| `slug`     | ✔️       | -       | Your ThankU wallet name                                                                                                                                  |
 | `cause`    | ✔️       | -       | The good cause you want to support (possible values: `PlantTrees`, `CleanOcean`, `ProtectWildlife`)                                                      |
 | `impact`   | ✔️       | -       | The impact value (a positive integer). Depending on the selected `cause` this value represents either number of trees, kg plastic or sqm habitat.        |
 | `message`  | ✔️       | -       | The ThankU message you want to show                                                                                                                      |
 | `pid`      | ✔️       | -       | The postpaid id (an unique id like e.g. your order id)                                                                                                   |
 | `sig`      | ✔️       | -       | The signature, a HMAC-SHA256 hash (hex encoded) generated with your secret `token` (`sig` needs to be generated server-side to keep your `token` secret) |
+| `oid`      | ✔️       | -       | The ThankU order id (e.g. `A-21-2`)                                                                                                                      |
 | `lang`     |          | `en`    | The language used for the widget and for the generated ThankU (possible values: `en`, `de`)                                                              |
 | `simulate` |          | -       | If defined no data will be stored on our side, so no ThankU will be created. Great for testing!                                                          |
 
